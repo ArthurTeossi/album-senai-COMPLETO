@@ -59,12 +59,7 @@ header {
 .bloco-esquerdo img {
     height: 55px;
     width: auto;
-    transition: transform 0.4s ease;
 }
-.bloco-esquerdo img:hover{
-    transform: scale(1.15);
-}
-.inte
 
 .textos-titulo {
     display: flex;
@@ -93,11 +88,15 @@ header {
     gap: 12px;
     transition: transform 0.35s ease;
 }
-
 .botao:hover{
     transform: scale(1.075)
 }
-
+.bloco-esquerdo img{
+    transition: transform 0.4s ease;
+}
+.bloco-esquerdo img:hover{
+    transform: scale(1.15);
+}
 .internet img {
     height: 22px;
     width: auto;
@@ -201,6 +200,7 @@ header {
     font-size: 36px;
     font-weight: 900;
     line-height: 1.05;
+    text-align: center;
 }
 
 .sub-selecao {
@@ -221,6 +221,8 @@ header {
     width: auto;
     object-fit: contain;
     align-self: flex-start;
+    margin: 0 auto;
+    display: block;
 }
 
 .card-texto {
@@ -273,8 +275,6 @@ header {
 .foto-container {
     width: auto;
     height: auto;
-    border: 5px solid var(--cor-preto);
-    border-radius: 125px;
     overflow: hidden;
     margin-bottom: 25px;
 }
