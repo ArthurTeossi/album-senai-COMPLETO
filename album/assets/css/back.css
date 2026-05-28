@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-image:  url(../img/fundo-back.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+.pagina-album {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 40px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.coluna-esquerda {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 320px;
+  flex-shrink: 0;
+}
+
+.cabecalho-titulo .texto-brasil {
+  font-family: 'Gasoek One', sans-serif;
+  font-weight: 900;
+  font-size: 70px;
+  color: #002395;
+  line-height: 1;
+  display: block;
+}
+
+.cabecalho-titulo .texto-frontend {
+  font-family: 'Gasoek One', sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  color: #ED2939;
+  line-height: 1;
+  display: block;
+}
+
+.logo-html5 {
+  width: 120px;
+  margin-top: 10px;
+}
+
+.tecnico {
+  font-family: 'Gasoek One', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  letter-spacing: 5px;
+  color: #ED2939;
+  margin-top: 20px;
+}
+
+.imagem-tecnico {
+  width: 100%;
+  height: 420px;
+  border-radius: 30px;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  border: 3px solid #000000;
+  box-shadow: 7px 7px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagem-tecnico:hover {
+  transform: scale(1.04) translateY(-6px);
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.botao-voltar {
+  display: block;
+  background: #ffffff;
+  color: #002776;
+  font-family: 'Gasoek One', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  padding: 12px 0;
+  border-radius: 50px;
+  border: 3px solid #002776;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 3px 3px 0 rgba(0,0,0,.2);
+  transition: transform .15s, box-shadow .15s;
+  margin-top: 20px;
+}
+
+.botao-voltar:hover {
+  transform: translate(-2px,-2px);
+  box-shadow: 5px 5px 0 rgba(0,0,0,.25);
+}
+
+.todas-as-figurinhas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  flex-grow: 1;
+}
+
+.figurinha {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  aspect-ratio: 180 / 240;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 3px 4px 8px rgba(0,0,0,.4);
+  display: block;
+  border: 2px solid transparent;
+  transition: transform 0.35s, box-shadow 0.2s;
+  justify-self: center;
+}
+
+.figurinha:hover {
+  transform: translate(-3px,-4px) rotate(-1.25deg) scale(1.06);
+  box-shadow: 6px 8px 0 rgba(0,0,0,.45);
+  position: relative;
+  z-index: 10;
+  border-color: #ffffff;
+}
+
+@media screen and (max-width: 1024px) {
+  body{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.15)), url(../img/fundo-back.png);
+  }
+  .pagina-album {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .coluna-esquerda {
+    width: 100%;
+    max-width: 450px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .imagem-tecnico {
+    max-width: 320px;
+    height: 380px;
+  }
+
+  .botao-voltar {
+    width: 100%;
+  }
+
+  .todas-as-figurinhas {
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+  }
+  .cabecalho-titulo .texto-frontend{
+    color: #ff4747;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+
+  .pagina-album {
+    padding: 20px;
+  }
+
+  .cabecalho-titulo .texto-brasil {
+    font-size: 55px;
+  }
+
+  .cabecalho-titulo .texto-frontend {
+    font-size: 38px;
+  }
+
+  .todas-as-figurinhas {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}

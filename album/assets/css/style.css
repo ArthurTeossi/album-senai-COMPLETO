@@ -1,0 +1,457 @@
+@import url('https://googleapis.com');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+:root{
+    --cor-principal: #002A77;
+    --cor-secundaria: #465CBA;
+    --cor-numero: #8AEAFB;
+    --cor-letras: #FFF6F6;
+    --cor-preto: #1E1717;
+    --verde-brasil: #009541;
+    --amarelo-brasil: #DEAA00;
+    --azul-franca: #002395;
+    --vermelho-franca: #ED2939;
+    --fundo-cinza: #f8f8f8;
+}
+    
+body{
+    background-color: var(--cor-letras);
+}
+
+header {
+    background-image: url(../img/Rectangle\ 3.png);
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    min-height: 700px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fundoazul {
+    background-color: var(--cor-secundaria);
+    border: 2px solid var(--cor-principal);
+    border-radius: 40px;
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 97.5%;
+    position: fixed;
+    z-index: 9999;
+}
+
+.bloco-esquerdo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.bloco-esquerdo img {
+    height: 55px;
+    width: auto;
+}
+
+.textos-titulo {
+    display: flex;
+    flex-direction: column;
+}
+
+.textos-titulo h1 {
+    color: var(--cor-letras);
+    font-size: 22px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textos-titulo .ano-topo {
+    color: var(--cor-letras);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.botao {
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.internet img {
+    height: 22px;
+    width: auto;
+    display: block;
+}
+
+.botao p {
+    color: var(--cor-preto);
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.botao p strong {
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.conteudo-inferior {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 100px;
+}
+
+.titulo-fifa {
+    color: var(--cor-letras);
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 0.95;
+    margin: 0 0 20px 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.textinho {
+    font-style: italic;
+    margin-left: 40px;
+    color: var(--cor-preto);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.numeros {
+    display: flex;
+    margin-left: 40px;
+}
+
+.num1 { font-size: 80px; font-weight: 900; color: #DD1B1B; 
+}
+.num2 { font-size: 80px; font-weight: 900; color: #6461FF; 
+}
+.num3 { font-size: 80px; font-weight: 900; color: #DD36DA;
+ }
+.num4 { font-size: 80px; font-weight: 900; color: #58DD1B;
+ }
+
+
+.secao-selecoes {
+    padding: 60px 40px;
+    background-color: var(--fundo-cinza);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-secoes {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 900;
+    color: var(--cor-principal);
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+}
+
+.card-selecao {
+    background-color: var(--fundo-cinza);;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 70px;
+}
+
+.info-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.identificacao {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 240px;
+}
+
+.nome-selecao {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 1.05;
+}
+
+.sub-selecao {
+    font-size: 26px;
+}
+
+.verde { color: var(--verde-brasil); 
+}
+.amarelo { color: var(--amarelo-brasil);
+ }
+.azul-escuro { color: var(--azul-franca);
+ }
+.vermelho { color: var(--vermelho-franca);
+ }
+
+.logo-tech {
+    height: 120px;
+    width: auto;
+    object-fit: contain;
+    align-self: flex-start;
+}
+
+.card-texto {
+    flex-grow: 1;
+    min-height: 340px;
+    padding: 25px 40px 25px 90px;  
+    display: flex;
+    align-items: center;
+    border-radius: 24px 24px;
+    
+}
+
+.verde-bg { 
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/fundo-front.png); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.azul-bg { 
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/fundo-back.png); 
+    background-size: cover;
+    background-position: center;
+}
+
+.card-texto p {
+    color: white;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: justify;
+    text-transform: uppercase;
+}
+
+.detalhes-tecnicos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    width: 100%;
+}
+
+.detalhes-tecnicos h4 {
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--cor-principal);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.foto-container {
+    width: auto;
+    height: auto;
+    border: 5px solid var(--cor-preto);
+    border-radius: 125px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.foto-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.legenda {
+    text-align: center;
+    font-size: 18px;
+    color: #7A7A7A;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+.secao-album {
+    background-image: url('../img/fundo-card-legends.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topo-album {
+    background-color: var(--cor-secundaria);
+    border: 3px solid white;
+    border-radius: 30px;
+    padding: 15px 50px;
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.topo-album h2 {
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.topo-album .sub-album {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 2px;
+}
+
+.grid-figurinhas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.sticker-card {
+    background-color: var(--fundo-cinza);;
+    aspect-ratio: 2/3;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 3px 4px 8px rgba(0,0,0,.4);
+    transition: transform 0.2s;
+}
+
+.sticker-card:hover {
+  transform: translate(-3px,-4px) rotate(-1deg) scale(1.05);
+  box-shadow: 6px 8px 0 rgba(0,0,0,.45);
+  position: relative;
+  z-index: 10;
+}
+
+.sticker-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.botoes-navegacao {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.btn-album {
+    flex: 1;
+    text-align: center;
+    padding: 18px;
+    border-radius: 40px;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    border: 3px solid white;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease; 
+}
+
+.btn-album:hover{
+    transform: scale(1.05);
+}
+.btn-front { background-color: var(--verde-brasil); }
+.btn-back { background-color: var(--azul-franca); }
+
+
+.rodape-desenvolvimento {
+    background-color: #0d165c;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 5px solid #ffde00;
+}
+
+.rodape-esquerdo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.mini-trofeu {
+    height: 45px;
+    width: auto;
+}
+
+.rodape-texto h4 {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.rodape-texto p {
+    font-size: 12px;
+    color: #bbb;
+    line-height: 1.3;
+    margin-top: 2px;
+}
+
+.rodape-direito {
+    text-align: right;
+}
+
+.marca-senai {
+    padding: 25px 45px;
+    display: inline-block;
+    border-radius: 4px;
+    background-image: url(../img/senai-logo.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.direitos {
+    font-size: 11px;
+    color: #bbb;
+}
+.identificacao {
+    min-width: 180px;
+}
+@media (max-width: 768px) {
+    .fundoazul{
+        width: 90%;
+    }
+
+    .info-principal, .detalhes-tecnicos, .botoes-navegacao, .rodape-desenvolvimento {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .grid-figurinhas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card-texto {
+        clip-path: none;
+        border-radius: 24px;
+        padding: 25px;
+    }
+    .titulo-fifa {
+        font-size: 45px;
+    }
+    .rodape-direito {
+        text-align: left;
+    }
+}
